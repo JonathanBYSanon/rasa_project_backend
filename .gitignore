@@ -4,8 +4,6 @@ ENV/
 env/
 
 # Ignore Rasa cache
-.rasa/
-.cache/
 tests/
 
 # Ignore temporary files
