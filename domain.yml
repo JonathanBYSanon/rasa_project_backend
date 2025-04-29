@@ -1,0 +1,56 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - ask_about_me
+  - ask_about_my_hobbies
+  - ask_about_my_plans
+  - ask_about_my_work
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you? I am Jonathan . I can tell you everything about me."
+    buttons:
+      - title: "Ask about me"
+        payload: "/ask_about_me"
+      - title: "Ask about my hobbies"
+        payload: "/ask_about_my_hobbies"
+      - title: "Ask about my plans"
+        payload: "/ask_about_my_plans"
+      - title: "Ask about my work"
+        payload: "/ask_about_my_work"
+
+  utter_goodbye:
+  - text: "Bye, see you next time!"
+
+  utter_ask_about_me:
+  - text: "My full name is Jonathan Ben-Yviaud Sanon. I am a software dev and I am 25 years old. I am from Haiti and I live in the Canada."
+
+  utter_ask_about_my_hobbies:
+  - text: "I love to play Basketball, watch movies, and read books. I also enjoy going out with friends and exploring new places."
+
+  utter_ask_about_my_plans:
+  - text: "I plan to continue my studies in computer science and work on exciting projects. I also want to travel and experience different cultures."
+
+  utter_ask_about_my_work:
+  - text: "I haven't worked in a company yet, but I have been doing personal projects, like my portfolio website, also the tijwet.com website and a few small applications. I also worked on this chatbot."
+
+  utter_fallback:
+  - text: "I am not sure about that. Can you please rephrase your question?"
+    buttons:
+      - title: "Ask about me"
+        payload: "/ask_about_me"
+      - title: "Ask about my hobbies"
+        payload: "/ask_about_my_hobbies"
+      - title: "Ask about my plans"
+        payload: "/ask_about_my_plans"
+      - title: "Ask about my work"
+        payload: "/ask_about_my_work"
+
+actions:
+  - utter_fallback
+  
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,37 @@
+version: "3.1"
+
+rules:
+- rule : Greet the user anytime the user says hello
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Ask about me
+  steps:
+  - intent: ask_about_me
+  - action: utter_ask_about_me
+
+- rule: Ask about my hobbies
+  steps:
+  - intent: ask_about_my_hobbies
+  - action: utter_ask_about_my_hobbies
+
+- rule: Ask about my plans
+  steps:
+  - intent: ask_about_my_plans
+  - action: utter_ask_about_my_plans
+
+- rule: Ask about my work
+  steps:
+  - intent: ask_about_my_work
+  - action: utter_ask_about_my_work
+
+- rule: Handle Fallback
+  steps:
+  - intent: nlu_fallback
+  - action: utter_fallback

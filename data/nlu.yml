@@ -1,0 +1,92 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: ask_about_me
+  examples: |
+    - tell me about yourself
+    - who are you
+    - what is your name
+    - what do you do
+    - tell me about you
+    - what is your full name
+    - what is your age
+    - where are you from
+    - where do you live
+
+- intent: ask_about_my_hobbies
+  examples: |
+    - what are your hobbies
+    - what do you like to do
+    - what are your interests
+    - what do you enjoy doing
+    - tell me about your hobbies
+    - what do you like
+    - what are your favorite activities
+    - what do you do for fun
+    - what do you do in your free time
+
+- intent: ask_about_my_plans
+  examples: |
+    - what are your plans
+    - what do you want to do
+    - what are your goals
+    - what do you want to achieve
+    - what are your future plans
+    - what do you plan to do
+    - what are your aspirations
+    - what do you want to accomplish
+    - what are your dreams
+
+- intent: ask_about_my_work
+  examples: |
+    - what do you do for work
+    - what is your job
+    - where do you work
+    - what is your profession
+    - what do you do for a living
+    - tell me about your work
+    - what is your occupation
+    - what is your field of work
+    - what is your career
+    - what is your job title
+    - what is your work experience
+    - what is your work history
+    - what is your work background
+    - what is your work life
+    - what is your work schedule
+    - what is your work routine
+    - what is your work environment
+    - what is your work culture
+    - what is your work style
+    - what is your work ethic
+    - what is your work philosophy
+    - what is your work approach

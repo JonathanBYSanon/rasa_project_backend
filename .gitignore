@@ -1,0 +1,32 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Ignore virtual environments
+venv/
+ENV/
+env/
+
+# Ignore Rasa cache
+.rasa/
+.cache/
+*.tar.gz
+
+# Ignore temporary files
+*.log
+*.tmp
+*.bak
+
+# Ignore VSCode settings (if you use VSCode)
+.vscode/
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore environment variables
+.env
